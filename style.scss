@@ -1,0 +1,113 @@
+/* style of background of body-overlay-container */
+body {
+  background-image: url("https://c.wallhere.com/photos/ff/05/Red_moon_people_space_telephone_teens-1179122.jpg!d");
+  color: #fff;
+  background-size: 100%, 100%;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  
+  h1 {padding-top: 15px;}
+  
+  
+  /* overlay */
+  .overlay {
+    position: absolute;
+    background: rgba(45, 156, 219, 0.3);
+    width: 100%;
+    height: 100%;
+    
+    
+      /* container */
+      .container {
+        background: rgba(0, 0, 0, 0.63);
+        color: #fff;
+        border-radius: 5px 5px 0px 0px;
+        height: calc(100% - 71px);
+        position:relative;
+    }
+  }
+}
+
+
+
+.charts {
+  display: none;
+  height: 70%;
+
+  &.active {
+    display: flex;
+  }
+  div {
+    background: linear-gradient(#f2c94c, rgba(0, 0, 0, 0));
+    margin: 0px 1px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding:0px;
+  }
+}  
+    
+
+
+/*  library content  */
+.libraries {
+  position: absolute;
+  margin: auto;
+  top: 15%;
+  
+  left: 0px;
+  right: 0px;
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+
+/* headers that show contet */
+.heading {
+  padding: 25px 0px 50px 0px;
+  
+  .active {
+    opacity: 1;
+  }
+  h4 {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+
+
+
+/* navigation */
+
+.navi {
+  position: absolute;
+  margin: 0px 15%;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+  div {
+    cursor: pointer;
+  }
+}
+
+
+.precentage
+{
+  position:absolute;
+  width:60px;
+  height:60px;
+  top:0px;
+  left:0px; 
+  color: #F2C94C;
+  background: linear-gradient(RGBA(235, 87, 87, 0.6), RGBA(242, 201, 76, 0.6));
+  border-radius: 5px 0 90px 0;
+  font-size:20px;
+  text-align:initial;
+  padding: 10px 7px;
+  font-weight:300;
+ }
